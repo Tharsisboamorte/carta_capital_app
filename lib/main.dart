@@ -1,3 +1,7 @@
+import 'package:carta_capital_app/ui/home_page.dart';
+import 'package:carta_capital_app/ui/magazines_page.dart';
+import 'package:carta_capital_app/ui/news_page.dart';
+import 'package:carta_capital_app/ui/saved_page.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/account_page.dart';
@@ -15,13 +19,14 @@ class CartaCapital extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Carta Capital",
-      theme: ThemeData(
-        primarySwatch: Colors.red
-      ),
+      debugShowCheckedModeBanner: false,
       initialRoute: "/profile",
       routes: {
         "/profile": (_) => const ProfilePage(),
+        "/home": (_) => const HomePage(),
+        "/news": (_) => const NewsPage(),
+        "/magazines": (_) => const MagazinePage(),
+        "/saved": (_) => const SavedPage(),
         "/account": (_) => const AccountPage(),
         "/createAccount": (_) => const CreateAccountPage(),
         "/paymentPage": (_) => const PaymentPage(),

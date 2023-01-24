@@ -11,20 +11,20 @@ class PasswordTextField extends StatefulWidget {
 
 class _PasswordTextFieldState extends State<PasswordTextField> {
   bool passwordVisible = false;
-  String get label => label;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          label,
+          widget.label,
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: GoogleFonts.workSans().fontFamily),
         ),
+        const SizedBox(height: 5),
         TextField(
           obscureText: passwordVisible,
           decoration: InputDecoration(
@@ -36,8 +36,8 @@ class _PasswordTextFieldState extends State<PasswordTextField> {
                     });
                   },
                   icon: Icon(passwordVisible
-                      ? Icons.visibility
-                      : Icons.visibility_off))),
+                      ? Icons.visibility_off
+                      : Icons.visibility))),
         ),
       ],
     );

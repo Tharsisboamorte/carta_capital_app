@@ -10,6 +10,6 @@ class AccountPage extends StatefulWidget {
 class _AccountPageState extends State<AccountPage> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return const Scaffold();
   }
 }

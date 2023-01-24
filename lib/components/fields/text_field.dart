@@ -12,7 +12,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
@@ -22,6 +22,7 @@ class CustomTextField extends StatelessWidget {
             fontFamily: GoogleFonts.workSans().fontFamily,
           ),
         ),
+        const SizedBox(height: 5),
         TextField(
           decoration: InputDecoration(
             hintText: hintText,

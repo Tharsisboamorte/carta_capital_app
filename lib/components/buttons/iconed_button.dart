@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomIconButton extends StatelessWidget {
-  final Image icon;
+  final Icon icon;
   final String text;
 
   const CustomIconButton({Key? key, required this.icon, required this.text})

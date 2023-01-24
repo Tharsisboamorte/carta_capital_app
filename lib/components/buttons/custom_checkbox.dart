@@ -16,10 +16,6 @@ class CustomCheckBox extends StatefulWidget {
 class _CustomCheckBoxState extends State<CustomCheckBox> {
   bool isChecked = false;
 
-  get normalText => normalText;
-
-  get underlinedText => underlinedText;
-
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -32,20 +28,25 @@ class _CustomCheckBoxState extends State<CustomCheckBox> {
             });
           },
           checkColor: DefaultConfig.defaultThemeColor,
+          activeColor: Colors.white,
           side: const BorderSide(
+            strokeAlign: StrokeAlign.outside,
+            width: 1,
             color: Colors.grey,
           ),
         ),
         RichText(
           text: TextSpan(
-            text: normalText,
+            text: widget.normalText,
             style: TextStyle(
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontFamily: DefaultConfig.defaultFont),
             children: [
               TextSpan(
-                  text: underlinedText,
+                  text: widget.underlinedText,
                   style: TextStyle(
+                      color: Colors.black,
                       decoration: TextDecoration.underline,
                       fontFamily: DefaultConfig.defaultFont,
                       fontWeight: FontWeight.bold

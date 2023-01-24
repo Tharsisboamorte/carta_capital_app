@@ -40,57 +40,44 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    const Text("Crie a sua conta",
+                  children: const <Widget>[
+                    Text("Crie a sua conta",
                         style: TextStyle(fontWeight: FontWeight.bold)),
-                    const SizedBox(height: 15),
-                    const Text("Já tem conta na cartCapital"),
-                    const Text(
+                    SizedBox(height: 15),
+                    Text("Já tem conta na cartCapital"),
+                    Text(
                       "Entre agora!",
                       style: TextStyle(
                           decoration: TextDecoration.underline,
                           color: Colors.red),
                     ),
-                    const SizedBox(height: 20),
-                    const CustomTextField(label: "Nome Completo"),
-                    const SizedBox(height: 15),
-                    const CustomTextField(
+                    SizedBox(height: 20),
+                    CustomTextField(label: "Nome Completo"),
+                    SizedBox(height: 15),
+                    CustomTextField(
                         label: "E-mail", inputType: TextInputType.emailAddress),
-                    const SizedBox(height: 15),
-                    const CustomTextField(
+                    SizedBox(height: 15),
+                    CustomTextField(
                         label: "Celular", inputType: TextInputType.phone),
-                    const SizedBox(height: 15),
-                    const PasswordTextField(label: "Senha"),
-                    const SizedBox(height: 15),
-                    const PasswordTextField(label: "Confirmar Senha"),
-                    const SizedBox(height: 15),
-                    const CustomCheckBox(
+                    SizedBox(height: 15),
+                    PasswordTextField(label: "Senha"),
+                    SizedBox(height: 15),
+                    PasswordTextField(label: "Confirmar Senha"),
+                    SizedBox(height: 15),
+                    CustomCheckBox(
                         normalText: "Concordo com os ",
                         underlinedText: "termos e condições"),
-                    const SizedBox(height: 15),
-                    const CustomCheckBox(
+                    CustomCheckBox(
                         normalText: "Aceito a ",
                         underlinedText: "Política de Privacidade"),
-                    const SizedBox(height: 15),
-                    const CustomElevatedButton(
-                        page: "/Conta", label: "Criar Conta"),
-                    const Center(
+                    SizedBox(height: 25),
+                    CustomElevatedButton(
+                        page: "/createAccount", label: "Criar Conta"),
+                    Center(
                       child: Text(
                         "OU",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: const [
-                        CustomIconButton(
-                            icon: Image(image: AssetImage("assets/google.svg")),
-                            text: "Criar conta com o google"),
-                        CustomIconButton(
-                            icon: Image(image: AssetImage("assets/apple.svg")),
-                            text: "Criar conta com a apple"),
-                      ],
                     ),
                   ],
                 ),

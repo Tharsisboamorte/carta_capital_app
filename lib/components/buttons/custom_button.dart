@@ -12,24 +12,21 @@ class CustomElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 45,
-      child: ElevatedButton(
-        onPressed: () {
-          Navigator.pushReplacementNamed(context, page);
-        },
-        style: ButtonStyle(
-            backgroundColor: const MaterialStatePropertyAll<Color>(
-                DefaultConfig.defaultThemeColor),
-            shape: MaterialStatePropertyAll(RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(5.0),
-              side: const BorderSide(
-                  color: DefaultConfig.defaultThemeColor, width: 2),
-            ))),
-        child: Text(label,
-            style: TextStyle(
-                color: Colors.white, fontFamily: DefaultConfig.defaultFont)),
-      ),
+    return ElevatedButton(
+      onPressed: () {
+        Navigator.of(context).pushReplacementNamed(page);
+      },
+      style: ButtonStyle(
+          backgroundColor: MaterialStatePropertyAll<Color>(
+              DefaultConfig.defaultThemeColor),
+          shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5.0),
+            side: BorderSide(
+                color: DefaultConfig.defaultThemeColor, width: 2),
+          ))),
+      child: Text(label,
+          style: TextStyle(
+              color: Colors.white, fontFamily: DefaultConfig.buttonFont)),
     );
   }
 }
