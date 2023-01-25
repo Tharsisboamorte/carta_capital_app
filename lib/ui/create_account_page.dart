@@ -19,7 +19,6 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const TitleAppBar(),
       body: Column(
         children: [
           Padding(
@@ -86,7 +85,6 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
           )
         ],
       ),
-      bottomNavigationBar: const CustomBottomNavBar(),
     );
   }
 }

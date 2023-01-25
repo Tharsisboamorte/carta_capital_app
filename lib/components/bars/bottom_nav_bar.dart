@@ -28,7 +28,7 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   void _onItemTap(int index){
     setState(() {
       indexCurrent = index;
-      Navigator.of(context).pushReplacementNamed(_screenOptions.elementAt(index));
+      Navigator.of(context).pushReplacementNamed("/navigator");
     });
   }
   @override

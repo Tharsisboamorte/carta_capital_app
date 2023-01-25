@@ -1,4 +1,7 @@
+import 'package:carta_capital_app/components/bars/bottom_nav_bar.dart';
+import 'package:carta_capital_app/components/bars/title_appbar.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class NewsPage extends StatefulWidget {
   const NewsPage({Key? key}) : super(key: key);
@@ -10,6 +13,10 @@ class NewsPage extends StatefulWidget {
 class _NewsPageState extends State<NewsPage> {
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text("News"),);
+    return const Scaffold(
+        body: Center(
+            child: Text("News"),
+      ),
+    );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:carta_capital_app/ui/home_page.dart';
 import 'package:carta_capital_app/ui/magazines_page.dart';
+import 'package:carta_capital_app/ui/navigation/navigation_bar_ui.dart';
 import 'package:carta_capital_app/ui/news_page.dart';
 import 'package:carta_capital_app/ui/saved_page.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class CartaCapital extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/profile",
+      initialRoute: "/navigator",
       routes: {
         "/profile": (_) => const ProfilePage(),
         "/home": (_) => const HomePage(),
@@ -30,6 +31,7 @@ class CartaCapital extends StatelessWidget {
         "/account": (_) => const AccountPage(),
         "/createAccount": (_) => const CreateAccountPage(),
         "/paymentPage": (_) => const PaymentPage(),
+        "/navigator": (_) => const NavigationBarUi(),
       },
     );
   }

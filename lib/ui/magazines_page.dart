@@ -1,3 +1,5 @@
+import 'package:carta_capital_app/components/bars/bottom_nav_bar.dart';
+import 'package:carta_capital_app/components/bars/title_appbar.dart';
 import 'package:flutter/material.dart';
 
 class MagazinePage extends StatefulWidget {
