@@ -37,7 +37,7 @@ class _PasswordTextFieldState extends State<PasswordTextField> {
                   },
                   icon: Icon(passwordVisible
                       ? Icons.visibility_off
-                      : Icons.visibility))),
+                      : Icons.visibility, color: Colors.black,))),
         ),
       ],
     );

@@ -9,6 +9,7 @@ class CustomTextButton extends StatelessWidget {
   final double fontSize;
   final FontWeight fontWeight;
   final String page;
+  final bool isUnderline;
 
   const CustomTextButton(
       {Key? key,
@@ -16,26 +17,29 @@ class CustomTextButton extends StatelessWidget {
       required this.normalText,
       required this.coloredText,
       required this.color,
-      required this.fontSize,
-      required this.fontWeight})
+      this.fontSize = 15,
+      this.fontWeight = FontWeight.normal,
+      this.isUnderline = false})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(normalText),
+        Text(
+          normalText,
+          style: DefaultConfig().defaultTextStyle(
+              false, false, isUnderline, DefaultConfig.defaultFont, fontSize),
+        ),
         TextButton(
           onPressed: () {
             Navigator.pushReplacementNamed(context, page);
           },
-          child:
-            Text(coloredText,
+          child: Text(coloredText,
               style: TextStyle(
-                  color: DefaultConfig.defaultThemeColor,
+                  color: color,
                   fontFamily: DefaultConfig.defaultFont,
-                  fontWeight: FontWeight.normal)
-            ),
+                  fontWeight: FontWeight.normal)),
         ),
       ],
     );

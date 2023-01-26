@@ -16,7 +16,8 @@ class NavigationBarUi extends StatefulWidget {
 }
 
 class _NavigationBarUiState extends State<NavigationBarUi> {
-  int _indexCurrent =0;
+  int _indexCurrent = 0;
+
 
   final List<Widget> _screenOptions = <Widget>[
     HomePage(),
@@ -26,8 +27,7 @@ class _NavigationBarUiState extends State<NavigationBarUi> {
     ProfilePage(),
   ];
 
-
-  void _onItemTap(int index){
+  void _onItemTap(int index) {
     setState(() {
       _indexCurrent = index;
     });

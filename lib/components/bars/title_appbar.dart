@@ -58,7 +58,7 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
       actions: const <Widget>[
         Padding(
           padding: EdgeInsets.only(left: 5.0, top: 15.0, bottom: 15.0, right: 5.0),
-          child: CustomElevatedButton(page: "/createAccount", label: "Assine"),
+          child: CustomElevatedButton(page: "/payment", label: "Assine"),
         )
       ],
     );
