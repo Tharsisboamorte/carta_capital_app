@@ -73,7 +73,7 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                       underlinedText: "Política de Privacidade"),
                   SizedBox(height: 25),
                   CustomElevatedButton(
-                      page: "/createAccount", label: "Criar Conta"),
+                      page: "/payment", label: "Criar Conta"),
                   Center(
                     child: Text(
                       "OU",

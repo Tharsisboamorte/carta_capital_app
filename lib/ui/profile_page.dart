@@ -115,7 +115,10 @@ class _ProfilePageState extends State<ProfilePage> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-               const AltSignButton(), //Put Row with two buttons;
+               const Padding(
+                   padding: EdgeInsets.all(8.0),
+                  child: AltSignButton(),
+               ), //Put Row with two buttons;
               ],
             ),
                 ],

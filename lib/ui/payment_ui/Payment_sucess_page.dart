@@ -2,11 +2,10 @@ import 'package:carta_capital_app/components/bars/bottom_nav_bar.dart';
 import 'package:carta_capital_app/components/bars/title_appbar.dart';
 import 'package:carta_capital_app/components/buttons/custom_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class PaymentSucess extends StatelessWidget {
-  const PaymentSucess({super.key});
+class PaymentSucessPage extends StatelessWidget {
+  const PaymentSucessPage({super.key});
 
   @override
   Widget build(BuildContext context) {
