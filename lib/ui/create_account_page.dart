@@ -74,12 +74,14 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
                   SizedBox(height: 25),
                   CustomElevatedButton(
                       page: "/payment", label: "Criar Conta"),
+                  SizedBox(height: 25),
                   Center(
                     child: Text(
                       "OU",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
+                  SizedBox(height: 25),
                   AltSignButton(),
                 ],
               ),

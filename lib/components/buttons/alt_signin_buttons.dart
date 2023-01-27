@@ -17,7 +17,8 @@ class AltSignButton extends StatelessWidget {
                 icon: Icons.android, text: "Fazer Login com o google")),
         SizedBox(
           height: 50,
-          child: CustomIconButton(icon: Icons.apple,text: "Fazer Login com apple"),
+          child: CustomIconButton(
+              icon: Icons.apple, text: "Fazer Login com apple"),
         ),
       ],
     );

@@ -35,7 +35,7 @@ class _PaymentPageState extends State<PaymentPage> {
                 height: 20,
               ),
               const CustomDropDownButton(
-                item: 'Cartão de Crédito',
+                item: 'Cartão de crédito',
               ),
               const SizedBox(
                 height: 20,

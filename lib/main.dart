@@ -1,5 +1,6 @@
 import 'package:carta_capital_app/ui/home_page.dart';
 import 'package:carta_capital_app/ui/magazines_page.dart';
+import 'package:carta_capital_app/ui/my_account_page.dart';
 import 'package:carta_capital_app/ui/navigation/navigation_bar_ui.dart';
 import 'package:carta_capital_app/ui/news_page.dart';
 import 'package:carta_capital_app/ui/payment_ui/Payment_sucess_page.dart';
@@ -31,6 +32,7 @@ class CartaCapital extends StatelessWidget {
         "/magazines": (_) => const MagazinePage(),
         "/saved": (_) => const SavedPage(),
         "/account": (_) => const AccountPage(),
+        "/myAccount": (_) => const MyAccountPage(),
         "/createAccount": (_) => const CreateAccountPage(),
         "/payment": (_) => const PaymentPage(),
         "/paymentRevision": (_) => const PaymentRevisionPage(),

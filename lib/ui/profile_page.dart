@@ -95,26 +95,26 @@ class _ProfilePageState extends State<ProfilePage> {
                   children: const [
                     CustomTextButton(
                       normalText: "Esqueci minha senha",
-                      coloredText: "",
                       isUnderline: true,
                       page: "/restePassword",
                       color: Colors.black,
                     ),
                     CustomTextButton(
                       normalText: "Esqueci meu E-mail",
-                      coloredText: "",
                       isUnderline: true,
                       page: "/resteEmail",
                       color: Colors.black,
                     ),
                   ],
                 ),
+                const SizedBox(height: 15),
                 const Center(
                   child: Text(
                     "OU",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
+                const SizedBox(height: 10),
                const Padding(
                    padding: EdgeInsets.all(8.0),
                   child: AltSignButton(),

@@ -1,3 +1,4 @@
+import 'package:carta_capital_app/ui/menu_account.dart';
 import 'package:carta_capital_app/utils/default.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -19,7 +20,21 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
               SizedBox(
                 width: 25,
                 child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(PageRouteBuilder(pageBuilder:
+                          (BuildContext context, Animation<double> animation,
+                              Animation<double> secondaryAnimation) {
+                        return const MenuAccount();
+                      }, transitionsBuilder: (BuildContext context,
+                          Animation<double> animation,
+                          Animation<double> secondaryAnimation,
+                          Widget child) {
+                        return FadeTransition(
+                          opacity: animation,
+                          child: child,
+                        );
+                      }));
+                    },
                     icon: const Icon(
                       Icons.menu,
                       color: Colors.black,
@@ -41,23 +56,21 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
               text: TextSpan(
                   text: "Carta",
                   style: TextStyle(
-                      color: DefaultConfig.defaultThemeColor,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: GoogleFonts.robotoSerif().fontFamily,
+                    color: DefaultConfig.defaultThemeColor,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: GoogleFonts.robotoSerif().fontFamily,
                   ),
                   children: const <TextSpan>[
             TextSpan(
               text: "Capital",
               style: TextStyle(color: Colors.black, fontSize: 20),
             )
-          ]
-              )
-          )
-      ),
+          ]))),
       actions: const <Widget>[
         Padding(
-          padding: EdgeInsets.only(left: 5.0, top: 15.0, bottom: 15.0, right: 5.0),
+          padding:
+              EdgeInsets.only(left: 5.0, top: 15.0, bottom: 15.0, right: 5.0),
           child: CustomElevatedButton(page: "/payment", label: "Assine"),
         )
       ],
