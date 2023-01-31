@@ -89,28 +89,25 @@ class _MenuAccountState extends State<MenuAccount> {
               ],
             ),
           ),
-          CustomTextButton(
+          const CustomTextButton(
             page: '/myAccount',
-            normalText: 'MINHA CONTA',
-            color: DefaultConfig.defaultThemeColor, isRed: true,
+            normalText: 'MINHA CONTA', isRed: true,
           ),
           Divider(
             thickness: 2,
             color: DefaultConfig.defaultGrey,
           ),
-          CustomTextButton(
+          const CustomTextButton(
             page: '/myAccount',
-            normalText: 'CONFIGURAÇÕES',
-            color: DefaultConfig.defaultThemeColor, isRed: true,
+            normalText: 'CONFIGURAÇÕES', isRed: true,
           ),
           Divider(
             thickness: 2,
             color: DefaultConfig.defaultGrey,
           ),
-          CustomTextButton(
+          const CustomTextButton(
             page: '/',
-            normalText: 'FAQ',
-            color: DefaultConfig.defaultThemeColor, isRed: true,
+            normalText: 'FAQ',isRed: true,
           ),
           Divider(
             thickness: 2,

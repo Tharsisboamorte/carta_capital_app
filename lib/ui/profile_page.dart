@@ -97,13 +97,11 @@ class _ProfilePageState extends State<ProfilePage> {
                       normalText: "Esqueci minha senha",
                       isUnderline: true,
                       page: "/restePassword",
-                      color: Colors.black,
                     ),
                     CustomTextButton(
                       normalText: "Esqueci meu E-mail",
                       isUnderline: true,
                       page: "/resteEmail",
-                      color: Colors.black,
                     ),
                   ],
                 ),

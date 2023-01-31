@@ -33,6 +33,7 @@ dependencies:
     sdk: flutter
   google_fonts: ^3.0.1
   shared_preferences: ^2.0.17
+  flutter_svg: ^1.1.6
 
 
 
@@ -63,8 +64,14 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - "assets/google.svg"
-    - "assets/apple.svg"
+    - assets/images/google.svg
+    - assets/images/apple.svg
+    - assets/images/image17.svg
+    - assets/images/image33.svg
+    - assets/images/image34.svg
+    - assets/images/image17.png
+    - assets/images/image33.png
+    - assets/images/image34.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

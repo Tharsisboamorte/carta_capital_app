@@ -4,7 +4,6 @@ import '../../utils/default.dart';
 
 class CustomTextButton extends StatelessWidget {
   final String normalText;
-  final Color color;
   final double fontSize;
   final FontWeight fontWeight;
   final String page;
@@ -16,7 +15,6 @@ class CustomTextButton extends StatelessWidget {
       {Key? key,
       required this.page,
       required this.normalText,
-      this.color = Colors.black,
       this.fontSize = 15,
       this.fontWeight = FontWeight.normal,
       this.isUnderline = false,
