@@ -46,7 +46,7 @@ class SavedCard extends StatelessWidget {
                           true, true, false, DefaultConfig.defaultFont, 12),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Text(title,

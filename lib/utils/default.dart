@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../components/cards/saved_card.dart';
+
 class DefaultConfig {
   static String? defaultFont = GoogleFonts.workSans().fontFamily;
   static Color defaultThemeColor = const Color(0xFFCD1719);
@@ -12,6 +14,7 @@ class DefaultConfig {
   static String? buttonFont = GoogleFonts.amiko().fontFamily;
   static EdgeInsets defaultFieldPadding = const EdgeInsets.only(left: 20.0, right: 20.0, top: 26.0, bottom: 8);
   static EdgeInsets defaultCheckPadding = const EdgeInsets.only(left: 20.0, right: 20.0, top: 26.0, bottom: 8);
+  
 
 
   TextStyle defaultTextStyle(
