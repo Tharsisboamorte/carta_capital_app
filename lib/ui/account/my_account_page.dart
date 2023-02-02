@@ -3,7 +3,7 @@ import 'package:carta_capital_app/components/buttons/custom_button.dart';
 import 'package:carta_capital_app/components/fields/text_field.dart';
 import 'package:flutter/material.dart';
 
-import '../components/bars/bottom_nav_bar.dart';
+import '../../components/bars/bottom_nav_bar.dart';
 
 class MyAccountPage extends StatefulWidget {
   const MyAccountPage({super.key});

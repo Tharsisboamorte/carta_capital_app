@@ -3,8 +3,8 @@ import 'package:carta_capital_app/ui/navigation/navigation_bar_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../components/buttons/custom_text_button.dart';
-import '../utils/default.dart';
+import '../../components/buttons/custom_text_button.dart';
+import '../../utils/default.dart';
 
 class MenuAccount extends StatefulWidget {
   const MenuAccount({Key? key}) : super(key: key);

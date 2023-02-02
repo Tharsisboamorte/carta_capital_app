@@ -1,16 +1,21 @@
+import 'package:carta_capital_app/ui/account/my_account_page.dart';
+import 'package:carta_capital_app/ui/email/email_confirm_page.dart';
+import 'package:carta_capital_app/ui/email/email_recovery_page.dart';
 import 'package:carta_capital_app/ui/home_page.dart';
 import 'package:carta_capital_app/ui/magazines_page.dart';
-import 'package:carta_capital_app/ui/my_account_page.dart';
 import 'package:carta_capital_app/ui/navigation/navigation_bar_ui.dart';
 import 'package:carta_capital_app/ui/news_page.dart';
-import 'package:carta_capital_app/ui/payment_ui/Payment_sucess_page.dart';
-import 'package:carta_capital_app/ui/payment_ui/payment_page.dart';
-import 'package:carta_capital_app/ui/payment_ui/payment_revison_page.dart';
+import 'package:carta_capital_app/ui/password/password_recovery_page.dart';
+import 'package:carta_capital_app/ui/password/password_reset_page-sucess.dart';
+import 'package:carta_capital_app/ui/password/password_reset_page.dart';
+import 'package:carta_capital_app/ui/payment/Payment_sucess_page.dart';
+import 'package:carta_capital_app/ui/payment/payment_page.dart';
+import 'package:carta_capital_app/ui/payment/payment_revison_page.dart';
 import 'package:carta_capital_app/ui/saved_page.dart';
 import 'package:carta_capital_app/ui/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
-import 'ui/account_page.dart';
+import 'ui/account/account_page.dart';
 import 'ui/create_account_page.dart';
 import 'ui/profile_page.dart';
 
@@ -40,6 +45,11 @@ class CartaCapital extends StatelessWidget {
         "/paymentRevision": (_) => const PaymentRevisionPage(),
         "/paymentSucess": (_) => const PaymentSucessPage(),
         "/navigator": (_) => const NavigationBarUi(),
+        "/passwordRecovery": (_) => const PasswordRecovery(),
+        "/passwordReset": (_) => const PasswordReset(),
+        "/resetSucess": (_) => const ResetSucess(),
+        "/emailRecovery": (_) => const EmailRecovery(),
+        "/emailConfirm": (_) => const EmailConfirm(),
       },
     );
   }

@@ -96,12 +96,12 @@ class _ProfilePageState extends State<ProfilePage> {
                     CustomTextButton(
                       normalText: "Esqueci minha senha",
                       isUnderline: true,
-                      page: "/restePassword",
+                      page: "/passwordReset",
                     ),
                     CustomTextButton(
                       normalText: "Esqueci meu E-mail",
                       isUnderline: true,
-                      page: "/resteEmail",
+                      page: "/emailRecovery",
                     ),
                   ],
                 ),

@@ -7,17 +7,19 @@ class HomeCard extends StatelessWidget {
   final String title;
   final double width;
   final double height;
+  final String edition;
 
   const HomeCard(
       {Key? key,
       required this.title,
       this.width = 161,
-      this.height = 212 })
+      this.height = 212,
+      required this.edition})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Card(
       color: Colors.white,
       child: Row(
         children: [
@@ -25,6 +27,7 @@ class HomeCard extends StatelessWidget {
               width: width, height: height),
           Column(
             children: [
+              Text("EDIÇÃO $edition"),
               Text(title),
               Text(
                 "06 de maio de 2022",
