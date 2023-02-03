@@ -4,7 +4,6 @@ import 'package:carta_capital_app/ui/news_page.dart';
 import 'package:carta_capital_app/ui/profile_page.dart';
 import 'package:carta_capital_app/ui/saved_page.dart';
 import 'package:carta_capital_app/utils/default.dart';
-import 'package:carta_capital_app/utils/shared_info.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomNavBar extends StatefulWidget {
@@ -30,7 +29,6 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
     setState(() {
       indexCurrent = index;
       Navigator.of(context).pushReplacementNamed("/navigator");
-      SharedPref().saveNumber(indexCurrent);
     });
   }
   @override

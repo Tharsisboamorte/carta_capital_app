@@ -101,6 +101,11 @@ class _SavedPageState extends State<SavedPage> {
                       height: 55.5,
                       child: ElevatedButton(
                         style: ButtonStyle(
+                          shape: const MaterialStatePropertyAll(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.zero
+                              )
+                          ),
                           backgroundColor: MaterialStatePropertyAll(
                               DefaultConfig.defaultThemeColor),
                         ),
@@ -124,19 +129,16 @@ class _SavedPageState extends State<SavedPage> {
                         children: [
                           const SizedBox(height: 25),
                           Center(
-                            child:
-                                Text(
-                                    "Visto recentemente",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 20,
-                                      fontFamily: DefaultConfig.defaultFont
-                                    )
-                                ),
+                            child: Text("Visto recentemente",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20,
+                                    fontFamily: DefaultConfig.defaultFont)),
                           ),
                         ],
-                      ))
+                      )
+                  )
                 ],
               ),
             )

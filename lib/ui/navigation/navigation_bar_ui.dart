@@ -4,7 +4,6 @@ import 'package:carta_capital_app/ui/magazines_page.dart';
 import 'package:carta_capital_app/ui/news_page.dart';
 import 'package:carta_capital_app/ui/profile_page.dart';
 import 'package:carta_capital_app/ui/saved_page.dart';
-import 'package:carta_capital_app/utils/shared_info.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/default.dart';
