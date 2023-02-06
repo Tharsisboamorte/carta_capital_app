@@ -21,9 +21,9 @@ class SignUpCard extends StatelessWidget {
       color: Colors.white,
       shape: RoundedRectangleBorder(
           borderRadius: const BorderRadius.all(Radius.circular(5)),
-          side: BorderSide(color: DefaultConfig.borderGrey)),
+          side: BorderSide(color: DefaultConfig.borderGrey,strokeAlign: StrokeAlign.outside)),
       child: Padding(
-        padding: const EdgeInsets.all(19.0),
+        padding: const EdgeInsets.all(25.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -59,16 +59,15 @@ class SignUpCard extends StatelessWidget {
                     color: Colors.black,
                     fontSize: 22,
                     fontFamily: DefaultConfig.defaultFont)),
-            const SizedBox(height: 15),
+            const SizedBox(height: 25),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushReplacementNamed("/createAccount");
               },
               style: ButtonStyle(
-                fixedSize:
-                    const MaterialStatePropertyAll<Size>(Size(267, 40)),
-                backgroundColor: MaterialStatePropertyAll<Color>(
-                    DefaultConfig.darkerWhite),
+                fixedSize: const MaterialStatePropertyAll<Size>(Size(267, 40)),
+                backgroundColor:
+                    MaterialStatePropertyAll<Color>(DefaultConfig.darkerWhite),
                 shape: MaterialStatePropertyAll(RoundedRectangleBorder(
                   side: BorderSide(
                       color: DefaultConfig.defaultThemeColor, width: 2),
@@ -80,25 +79,51 @@ class SignUpCard extends StatelessWidget {
                       true, true, false, DefaultConfig.defaultFont, 16)),
             ),
             const SizedBox(height: 15),
-            Row(
-              children: [
-                Icon(Icons.check, color: DefaultConfig.defaultThemeColor),
-                const Text(
-                  "Acesso ilimitado ao conteúdo digital",
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16.0, top: 16.0),
+              child: Row(
+                children: [
+                  Icon(Icons.check, color: DefaultConfig.defaultThemeColor),
+                  const Expanded(
+                    child: Text(
+                      overflow: TextOverflow.visible,
+                      maxLines: 2,
+                      softWrap: true,
+                      "Acesso ilimitado ao conteúdo digital da CartaCapital.com.br",
+                    ),
+                  )
+                ],
+              ),
             ),
-            Row(
-              children: [
-                Icon(Icons.check, color: DefaultConfig.defaultThemeColor),
-                const Text("Acesso as newsletter exclusivas para assinantes"),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16.0),
+              child: Row(
+                children: [
+                  Icon(Icons.check, color: DefaultConfig.defaultThemeColor),
+                  const Expanded(
+                    child: Text(
+                        overflow: TextOverflow.visible,
+                        maxLines: 2,
+                        softWrap: true,
+                        "Acesso as newsletter exclusivas para assinantes"),
+                  ),
+                ],
+              ),
             ),
-            Row(
-              children: [
-                Icon(Icons.check, color: DefaultConfig.defaultThemeColor),
-                const Text("Acesso ilimitado a todo o "),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16.0),
+              child: Row(
+                children: [
+                  Icon(Icons.check, color: DefaultConfig.defaultThemeColor),
+                  const Expanded(
+                    child: Text(
+                        overflow: TextOverflow.visible,
+                        maxLines: 2,
+                        softWrap: true,
+                        "Acesso ilimitado a todo o material impresso da semana"),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

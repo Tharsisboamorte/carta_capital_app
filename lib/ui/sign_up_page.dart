@@ -58,19 +58,16 @@ class _SignUpMagazineState extends State<SignUpMagazine> {
                 ),
                 const SizedBox(height: 100),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Text("Cancele a qualquer momento",
                         style: TextStyle(
                             color: Colors.black, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 25),
                     Padding(
-                      padding:
-                          const EdgeInsets.only(top: 16.0, left: 16, right: 16),
+                      padding: const EdgeInsets.only(right: 28.0, left: 28.0, top: 30.0),
                       child: Container(
                         width: 450,
-                        height: 50,
+                        height: 35,
                         color: DefaultConfig.defaultThemeColor,
                         child: const Center(
                           child: Text("MELHOR PREÇO",
@@ -79,26 +76,27 @@ class _SignUpMagazineState extends State<SignUpMagazine> {
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: EdgeInsets.only(right: 25.0, left: 25, bottom: 28, top: 0.0),
                       child: SignUpCard(
                           title: "Premium",
                           value: "89,99",
                           typeSignature: "ASSINATURA ANUAL"),
                     ),
                     const Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: EdgeInsets.only(right: 25.0, left: 25, bottom: 28, top: 0.0),
                       child: SignUpCard(
                           title: "Padrão",
                           value: "49,99",
                           typeSignature: "ASSINATURA SEMESTRAL"),
                     ),
                     const Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: EdgeInsets.only(right: 25.0, left: 25, bottom: 28, top: 0.0),
                       child: SignUpCard(
                           title: "Básico",
                           value: "19,99",
                           typeSignature: "ASSINATURA MENSAL"),
                     ),
+                    const SizedBox(height: 50)
                   ],
                 )
               ],
@@ -107,13 +105,7 @@ class _SignUpMagazineState extends State<SignUpMagazine> {
                 top: 180,
                 left: 50,
                 right: 50,
-                child: Row(
-                  children: [
-                    Flexible(child: Image.asset("assets/images/image17.png")),
-                    Flexible(child: Image.asset("assets/images/image17.png")),
-                    Flexible(child: Image.asset("assets/images/image17.png")),
-                  ],
-                )
+                child: Image.asset("assets/images/mags/groupedMags.png"),
             ),
           ],
         ),
@@ -121,13 +113,3 @@ class _SignUpMagazineState extends State<SignUpMagazine> {
     );
   }
 }
-
-// Column(
-// mainAxisAlignment: MainAxisAlignment.center,
-// crossAxisAlignment: CrossAxisAlignment.center,
-// children: const [
-// SignUpCard(title: "Premium", value: "89,99", typeSignature: "ASSINATURA ANUAL"),
-// SignUpCard(title: "Padrão", value: "49,99", typeSignature: "ASSINATURA SEMESTRAL"),
-// SignUpCard(title: "Básico", value: "19,99", typeSignature: "ASSINATURA MENSAL"),
-// ],
-// )

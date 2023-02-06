@@ -34,25 +34,30 @@ class SavedCard extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                    child: Text(
-                      "EDIÇÃO $edition",
-                      style: DefaultConfig().defaultTextStyle(
-                          true, true, false, DefaultConfig.defaultFont, 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                      child: Text(
+                        "EDIÇÃO $edition",
+                        style: DefaultConfig().defaultTextStyle(
+                            true, true, false, DefaultConfig.defaultFont, 12),
+                      ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Text(title,
-                      style: DefaultConfig().defaultTextStyle(
-                          true, false, false, DefaultConfig.defaultFont, 20))
-                ],
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Text(title,
+                        softWrap: true,
+                        maxLines: 2,
+                        overflow: TextOverflow.visible,
+                        style: DefaultConfig().defaultTextStyle(
+                            true, false, false, DefaultConfig.defaultFont, 20))
+                  ],
+                ),
               ),
               Icon(Icons.bookmark,
                   color: DefaultConfig.defaultThemeColor, size: 40),
@@ -64,17 +69,19 @@ class SavedCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text("POR ${author.toUpperCase()}"),
-            const SizedBox(width: 120),
-            Text(
-              "VER MAIS",
-              style: DefaultConfig().defaultTextStyle(
-                  true, true, false, DefaultConfig.defaultFont, 12),
-            ),
-            Icon(
-              Icons.arrow_forward_ios_outlined,
-              color: DefaultConfig.defaultThemeColor,
-            ),
-            const SizedBox(height: 39),
+            Row(
+              children: [
+                Text(
+                  "VER MAIS",
+                  style: DefaultConfig().defaultTextStyle(
+                      true, true, false, DefaultConfig.defaultFont, 12),
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                  color: DefaultConfig.defaultThemeColor,
+                ),
+              ],
+            )
           ],
         ),
         isThreeLine: true,
