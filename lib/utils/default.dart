@@ -11,6 +11,7 @@ class DefaultConfig {
   static Color borderGrey = const Color(0xFFD2D2D2);
   static Color dimnGrey = const Color(0xFF929292);
   static Color defaultGrey = const Color(0xFF6E6F71);
+  static Color aboutText = const Color(0xFF333333);
   static String? buttonFont = GoogleFonts.amiko().fontFamily;
   static EdgeInsets defaultFieldPadding =
       const EdgeInsets.only(left: 20.0, right: 20.0, top: 26.0, bottom: 8);
@@ -32,7 +33,7 @@ Scelerisque eleifend donec pretium lputate sapien nec sagittis aliquam. Pharetra
     );
   }
 
-  ElevatedButton sharpElevatedButton( String title){
+  ElevatedButton sharpElevatedButton( String title, String page, BuildContext context){
     return ElevatedButton(
         style: ButtonStyle(
           shape: const MaterialStatePropertyAll(RoundedRectangleBorder(
@@ -40,7 +41,9 @@ Scelerisque eleifend donec pretium lputate sapien nec sagittis aliquam. Pharetra
           backgroundColor: MaterialStatePropertyAll(
               DefaultConfig.defaultThemeColor),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).pushReplacementNamed(page);
+        },
         child: Text(
           title,
           style: TextStyle(

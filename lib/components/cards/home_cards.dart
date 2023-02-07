@@ -54,7 +54,7 @@ class HomeCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const CustomElevatedButton(
-                      page: "/magazines", label: "LEIA AGORA"),
+                      page: "/completeMagazines", label: "LEIA AGORA"),
                   const SizedBox(width: 12),
                   InkWell(
                     onTap: () {},

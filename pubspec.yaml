@@ -71,10 +71,18 @@ flutter:
     - assets/images/mags/image26.png
     - assets/images/mags/image27.png
     - assets/images/mags/capaHome.png
+    - assets/images/mags/oAntidotoCapa.png
+    - assets/images/mags/lulaCapa.png
+    - assets/images/mags/cornoCapa.png
+    - assets/images/mags/danielCapa.png
+    - assets/images/mags/lulaEAlckminCapa.png
+    - assets/images/mags/lulaEPovoCapa.png
     - assets/images/mags/groupedMags.png
     - assets/images/mags/image33.png
+    - assets/images/mags/image28.png
     - assets/images/mags/image34.png
     - assets/images/plusbutton.png
+    - assets/images/bookmarkIcon.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

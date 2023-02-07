@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 20),
                     Center(
                         child:
-                            DefaultConfig().sharpElevatedButton("LEIA AGORA")),
+                            DefaultConfig().sharpElevatedButton("LEIA AGORA", "/completeMagazines", context)),
                     const SizedBox(height: 35),
                     Text(
                       "OUTRAS EDIÇÕES",
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(height: 30),
-              DefaultConfig().sharpElevatedButton("VER TODAS"),
+              DefaultConfig().sharpElevatedButton("VER TODAS", "/", context),
               const SizedBox(height: 25),
               Container(
                   color: DefaultConfig.defaultThemeColor,
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                                     fontSize: 20,
                                     fontFamily: DefaultConfig.defaultFont)),
                             SingleChildScrollView(
-                              physics: NeverScrollableScrollPhysics(),
+                              physics: const NeverScrollableScrollPhysics(),
                               scrollDirection: Axis.horizontal,
                               child: Row(
                                 mainAxisAlignment:
@@ -201,7 +201,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(height: 30),
-              DefaultConfig().sharpElevatedButton("VER TODAS"),
+              DefaultConfig().sharpElevatedButton("VER TODAS", "/", context),
               const SizedBox(height: 30),
             ],
           ),

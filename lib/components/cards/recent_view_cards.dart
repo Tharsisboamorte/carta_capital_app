@@ -30,6 +30,7 @@ class RecentViewCard extends StatelessWidget {
               width: 1)),
       child: Row(
         children: [
+          const SizedBox(width: 15),
           Image.asset(image, width: width, height: height),
           const SizedBox(width: 18),
           Expanded(
