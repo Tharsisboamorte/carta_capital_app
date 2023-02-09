@@ -7,7 +7,8 @@ import 'package:carta_capital_app/utils/default.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomNavBar extends StatefulWidget {
-  const CustomBottomNavBar({Key? key}) : super(key: key);
+  final int indexPage;
+  const CustomBottomNavBar({Key? key, required this.indexPage}) : super(key: key);
 
   @override
   State<CustomBottomNavBar> createState() => _CustomBottomNavBarState();
@@ -28,13 +29,13 @@ class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   void _onItemTap(int index){
     setState(() {
       indexCurrent = index;
-      Navigator.of(context).pushReplacementNamed("/navigator");
+      Navigator.of(context).pushReplacementNamed("/navigator",arguments: {"index" : index});
     });
   }
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-        currentIndex: indexCurrent,
+        currentIndex: widget.indexPage,
         onTap: _onItemTap,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: DefaultConfig.defaultThemeColor,

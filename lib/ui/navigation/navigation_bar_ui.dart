@@ -35,11 +35,16 @@ class _NavigationBarUiState extends State<NavigationBarUi> {
 
   @override
   Widget build(BuildContext context) {
+    bool cameFromAnotherScreen = ModalRoute.of(context)!.isCurrent;
+    final arguments = (ModalRoute.of(context)?.settings.arguments ??
+        <String, dynamic>{"index": 0}) as Map<String, dynamic>;
+
+
     return Scaffold(
       appBar: const TitleAppBar(),
       body: _screenOptions.elementAt(_indexCurrent),
       bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _indexCurrent,
+          currentIndex: cameFromAnotherScreen? arguments["index"] : _indexCurrent,
           onTap: _onItemTap,
           type: BottomNavigationBarType.fixed,
           selectedItemColor: DefaultConfig.defaultThemeColor,

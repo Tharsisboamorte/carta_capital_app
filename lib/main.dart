@@ -1,3 +1,4 @@
+import 'package:carta_capital_app/ui/Splash/splash_sreen_page.dart';
 import 'package:carta_capital_app/ui/account/my_account_page.dart';
 import 'package:carta_capital_app/ui/complete_magazines_page.dart';
 import 'package:carta_capital_app/ui/complete_news.dart';
@@ -33,7 +34,7 @@ class CartaCapital extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/navigator",
+      initialRoute: "/splashPage",
       routes: {
         "/profile": (_) => const ProfilePage(),
         "/home": (_) => const HomePage(),
@@ -57,6 +58,7 @@ class CartaCapital extends StatelessWidget {
         "/resetSucess": (_) => const ResetSucess(),
         "/emailRecovery": (_) => const EmailRecovery(),
         "/emailConfirm": (_) => const EmailConfirm(),
+        "/splashPage": (_) => const SplashPage(),
       },
     );
   }

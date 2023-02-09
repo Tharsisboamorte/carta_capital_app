@@ -45,13 +45,7 @@ class _PaymentPageState extends State<PaymentPage> {
               SizedBox(
                 width: 500,
                 height: 50,
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(primary: Colors.red[900]),
-                    onPressed: () {
-                      Navigator.of(context)
-                          .restorablePushReplacementNamed('/reset');
-                    },
-                    child: const Text("Alterar Minha Senha")),
+                child: Image.asset("assets/images/cards.png"),
               ),
 
               const SizedBox(
@@ -122,7 +116,6 @@ class _PaymentPageState extends State<PaymentPage> {
           ),
         ),
       ),
-      bottomNavigationBar: const CustomBottomNavBar(),
     );
   }
 }

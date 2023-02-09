@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                                         height: 166,
                                         width: 290,
                                         child: RecentViewCard(
-                                          image: 'assets/images/mags/image26.png',
+                                          image: 'assets/images/mags/image28.png',
                                           title: 'Intriga e corrupção',
                                           edition: '1206',
                                         ),

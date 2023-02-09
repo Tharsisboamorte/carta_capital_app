@@ -11,7 +11,6 @@ class PaymentSucessPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const TitleAppBar(),
-      bottomNavigationBar: const CustomBottomNavBar(),
       body: Center(
         child: Column(children: const [
           SizedBox(

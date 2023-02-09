@@ -11,7 +11,7 @@ class ResetSucess extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const TitleAppBar(),
-      bottomNavigationBar: const CustomBottomNavBar(),
+      bottomNavigationBar: const CustomBottomNavBar(indexPage: 4,),
       body: Center(
         child: Column(children: const [
           SizedBox(

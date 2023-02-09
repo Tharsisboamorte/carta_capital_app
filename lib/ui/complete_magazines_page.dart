@@ -18,7 +18,7 @@ class _CompleteMagazinesPageState extends State<CompleteMagazinesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const TitleAppBar(),
-      bottomNavigationBar: const CustomBottomNavBar(),
+      bottomNavigationBar: const CustomBottomNavBar(indexPage: 1),
       body: SingleChildScrollView(
         child: Stack(children: [
           Column(
@@ -143,7 +143,7 @@ class _CompleteMagazinesPageState extends State<CompleteMagazinesPage> {
                                             width: 290,
                                             child: RecentViewCard(
                                               image:
-                                                  'assets/images/mags/image27.png',
+                                                  'assets/images/mags/image28.png',
                                               title: 'Intriga e corrupção',
                                               edition: '1206',
                                             ),

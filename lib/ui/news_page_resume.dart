@@ -14,7 +14,7 @@ class NewsResume extends StatelessWidget {
         <String, dynamic>{"descritionText": ""}) as Map<String, dynamic>;
     return Scaffold(
       appBar: TitleAppBar(),
-      bottomNavigationBar: CustomBottomNavBar(),
+      bottomNavigationBar: CustomBottomNavBar(indexPage: 3),
       body: Column(children: [
         Padding(
             padding: const EdgeInsets.all(10),

@@ -17,7 +17,7 @@ class _CompleteNewsState extends State<CompleteNews> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const TitleAppBar(),
-      bottomNavigationBar: const CustomBottomNavBar(),
+      bottomNavigationBar: const CustomBottomNavBar(indexPage: 1),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -386,10 +386,8 @@ class _CompleteNewsState extends State<CompleteNews> {
             ),
             Padding(
               padding: const EdgeInsets.only(bottom: 35.0),
-              child: Center(
-                child: DefaultConfig().sharpElevatedButton("VER MAIS COMENTÁRIOS",
-                    "/", context, DefaultConfig.defaultThemeColor),
-              ),
+              child: DefaultConfig().sharpElevatedButton("VER MAIS COMENTÁRIOS",
+                  "/", context, DefaultConfig.defaultThemeColor),
             ),
             Container(
                 color: DefaultConfig.defaultThemeColor,

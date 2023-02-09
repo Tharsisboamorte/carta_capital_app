@@ -1,5 +1,6 @@
 import 'package:carta_capital_app/ui/account/menu_account.dart';
 import 'package:carta_capital_app/utils/default.dart';
+import 'package:flash/flash.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -10,6 +11,8 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool isSearchOn = false;
+
     return AppBar(
       backgroundColor: Colors.white,
       leading: SizedBox(
@@ -23,7 +26,7 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
                     onPressed: () {
                       Navigator.of(context).push(PageRouteBuilder(pageBuilder:
                           (BuildContext context, Animation<double> animation,
-                              Animation<double> secondaryAnimation) {
+                          Animation<double> secondaryAnimation) {
                         return const MenuAccount();
                       }, transitionsBuilder: (BuildContext context,
                           Animation<double> animation,
@@ -43,7 +46,9 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
               SizedBox(
                 width: 15,
                 child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      isSearchOn = true;
+                    },
                     icon: const Icon(
                       Icons.search,
                       color: Colors.black,
@@ -59,19 +64,22 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
                     color: DefaultConfig.defaultThemeColor,
                     fontSize: 25,
                     fontWeight: FontWeight.bold,
-                    fontFamily: GoogleFonts.robotoSerif().fontFamily,
+                    fontFamily: GoogleFonts
+                        .robotoSerif()
+                        .fontFamily,
                   ),
                   children: const <TextSpan>[
-            TextSpan(
-              text: "Capital",
-              style: TextStyle(color: Colors.black, fontSize: 20),
-            )
-          ]))),
-      actions: const <Widget>[
+                    TextSpan(
+                      text: "Capital",
+                      style: TextStyle(color: Colors.black, fontSize: 20),
+                    )
+                  ]))),
+      actions: <Widget>[
         Padding(
           padding:
-              EdgeInsets.only(left: 5.0, top: 15.0, bottom: 15.0, right: 5.0),
-          child: CustomElevatedButton(page: "/signUp", label: "Assine"),
+          const EdgeInsets.only(left: 5.0, top: 15.0, bottom: 15.0, right: 5.0),
+          child: isSearchOn ? const Icon(Icons.close) : const CustomElevatedButton(
+              page: "/signUp", label: "Assine"),
         )
       ],
     );
@@ -79,4 +87,5 @@ class TitleAppBar extends StatelessWidget with PreferredSizeWidget {
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+
 }
