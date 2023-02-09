@@ -116,7 +116,7 @@ class _MenuAccountState extends State<MenuAccount> {
             color: DefaultConfig.defaultGrey,
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 325.9, bottom: 15),
+            padding: const EdgeInsets.only(top: 305.9, bottom: 15),
             child: Center(
               child: Column(
                 children: [

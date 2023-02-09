@@ -28,14 +28,15 @@ class _NavigationBarUiState extends State<NavigationBarUi> {
     ProfilePage(),
   ];
 
-  void _onItemTap(int index) {
-    setState(() {
-      _indexCurrent = index;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
+
+    void _onItemTap(int index) {
+      setState(() {
+        _indexCurrent = index;
+      });
+    }
 
     return Scaffold(
       appBar: const TitleAppBar(),

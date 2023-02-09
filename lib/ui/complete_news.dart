@@ -158,27 +158,29 @@ class _CompleteNewsState extends State<CompleteNews> {
                 height: 250,
               ),
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("Tiradentes diante dos algozes",
-                      style: TextStyle(
-                          fontFamily: DefaultConfig.defaultFont,
-                          fontSize: 15,
-                          color: DefaultConfig.dimnGrey)),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 15.0),
-                  child: Text("Imagem: Reprodução",
-                      style: TextStyle(
-                          fontFamily: DefaultConfig.defaultFont,
-                          fontSize: 10,
-                          color: DefaultConfig.dimnGrey)),
-                ),
-              ],
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Tiradentes diante dos algozes",
+                        style: TextStyle(
+                            fontFamily: DefaultConfig.defaultFont,
+                            fontSize: 15,
+                            color: DefaultConfig.dimnGrey)),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 15.0),
+                    child: Text("Imagem: Reprodução",
+                        style: TextStyle(
+                            fontFamily: DefaultConfig.defaultFont,
+                            fontSize: 10,
+                            color: DefaultConfig.dimnGrey)),
+                  ),
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(25),
