@@ -17,13 +17,13 @@ class CustomBottomNavBar extends StatefulWidget {
 class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   int indexCurrent =0;
 
-  final List<String> _screenOptions = <String>[
-    "/home",
-    "/magazines",
-    "/saved",
-    "/news",
-    "/profile",
-  ];
+  final Map<String, Widget> _screenOptions = {
+    "/home" : HomePage(),
+    "/magazines" : MagazinePage(),
+    "/saved" : SavedPage() ,
+    "/news" : NewsPage(),
+    "/profile" : ProfilePage(),
+  };
 
 
   void _onItemTap(int index){

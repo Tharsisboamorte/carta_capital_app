@@ -100,7 +100,7 @@ class _MenuAccountState extends State<MenuAccount> {
             color: DefaultConfig.defaultGrey,
           ),
           const CustomTextButton(
-            page: '/myAccount',
+            page: '/configPage',
             normalText: 'CONFIGURAÇÕES', isRed: true,
           ),
           Divider(

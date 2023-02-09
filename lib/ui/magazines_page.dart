@@ -142,6 +142,7 @@ class _MagazinePageState extends State<MagazinePage> {
                         ),
                         Container(
                           child: GridView(
+                            physics: NeverScrollableScrollPhysics(),
                             shrinkWrap: true,
                             gridDelegate:
                             SliverGridDelegateWithFixedCrossAxisCount(

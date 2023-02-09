@@ -295,19 +295,22 @@ Este texto aparece na edição impressa de""",
     );
   }
 
-  RawMaterialButton circularLetterButton(String text) {
-    return RawMaterialButton(
-      onPressed: () {},
-      shape:
-      const CircleBorder(side: BorderSide(color: Colors.black, width: 1)),
-      elevation: 2.0,
-      fillColor: Colors.white,
-      padding: const EdgeInsets.all(15.0),
-      child: Text(
-        text,
-        style: const TextStyle(
-            color: Colors.black, fontSize: 12, fontWeight: FontWeight.bold),
-      ),
+    Container circularLButton(String text){
+    return Container(
+      height: 25.55,
+        width: 25.55,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black, width: 1,strokeAlign: StrokeAlign.outside),
+          borderRadius: BorderRadius.circular(20)
+        ),
+        child: Center(
+          child: Text(
+            text,
+            style: const TextStyle(
+                color: Colors.black, fontSize: 10, fontWeight: FontWeight.bold),
+          ),
+        ),
     );
   }
 

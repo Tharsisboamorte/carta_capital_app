@@ -101,7 +101,8 @@ class _CompleteNewsState extends State<CompleteNews> {
                 ],
               ),
             ),
-            Center(
+            Padding(
+              padding: const EdgeInsets.all(25.0),
               child: Text("Imagem: Fernando Frazão",
                   style: TextStyle(
                       color: DefaultConfig.dimnGrey,
@@ -137,12 +138,9 @@ class _CompleteNewsState extends State<CompleteNews> {
                             fontWeight: FontWeight.bold,
                             fontSize: 11)),
                   ),
-                  Flexible(
-                      flex: 1,
-                      child: DefaultConfig().circularLetterButton("A +")),
-                  Flexible(
-                      flex: 1,
-                      child: DefaultConfig().circularLetterButton("A -")),
+                  DefaultConfig().circularLButton("A +"),
+                  SizedBox(width: 25),
+                  DefaultConfig().circularLButton("A -"),
                 ],
               ),
             ),

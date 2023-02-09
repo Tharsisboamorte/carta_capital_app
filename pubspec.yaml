@@ -81,6 +81,8 @@ flutter:
     - assets/images/mags/image33.png
     - assets/images/mags/image28.png
     - assets/images/mags/image34.png
+    - assets/images/mags/image35.png
+    - assets/images/mags/image36.png
     - assets/images/plusbutton.png
     - assets/images/bookmarkIcon.png
     - assets/images/quotes.png
@@ -90,6 +92,7 @@ flutter:
     - assets/images/google.png
     - assets/images/apple.png
     - assets/images/cards.png
+    - assets/images/maskGroup.png
     - assets/images/tiradentes.png
     - assets/images/splash3.png
     - assets/images/splash1.png

@@ -2,6 +2,7 @@ import 'package:carta_capital_app/ui/Splash/splash_sreen_page.dart';
 import 'package:carta_capital_app/ui/account/my_account_page.dart';
 import 'package:carta_capital_app/ui/complete_magazines_page.dart';
 import 'package:carta_capital_app/ui/complete_news.dart';
+import 'package:carta_capital_app/ui/config_page.dart';
 import 'package:carta_capital_app/ui/email/email_confirm_page.dart';
 import 'package:carta_capital_app/ui/email/email_recovery_page.dart';
 import 'package:carta_capital_app/ui/home_page.dart';
@@ -59,6 +60,7 @@ class CartaCapital extends StatelessWidget {
         "/emailRecovery": (_) => const EmailRecovery(),
         "/emailConfirm": (_) => const EmailConfirm(),
         "/splashPage": (_) => const SplashPage(),
+        "/configPage": (_) => const ConfigPage(),
       },
     );
   }
