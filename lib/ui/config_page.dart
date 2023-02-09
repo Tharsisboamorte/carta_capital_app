@@ -23,7 +23,9 @@ class ConfigPage extends StatelessWidget {
                 IconButton(
                   icon: const Icon(Icons.arrow_back_ios),
                   color: Colors.red,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).popAndPushNamed("/menu");
+                  },
                 ),
                 const Text("Voltar")
               ],

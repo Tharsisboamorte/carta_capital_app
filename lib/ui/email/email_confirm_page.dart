@@ -19,7 +19,7 @@ class EmailConfirm extends StatelessWidget {
                   icon: const Icon(Icons.arrow_back_ios),
                   color: Colors.red,
                   onPressed: () {
-                    Navigator.of(context).restorablePushReplacementNamed("/");
+                    Navigator.of(context).popAndPushNamed("/navigator");
                   },
                 ),
                 const Text("Voltar")

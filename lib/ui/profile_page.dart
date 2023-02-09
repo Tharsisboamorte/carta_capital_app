@@ -86,7 +86,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   child: Padding(
                     padding: EdgeInsets.only(left: 20, right: 20, bottom: 10),
                     child: CustomElevatedButton(
-                        page: "/createAccount", label: "Entrar", isBold: true),
+                        page: "/myAccount", label: "Entrar", isBold: true),
                   ),
                 ),
                 const SizedBox(height: 15),
@@ -96,7 +96,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     CustomTextButton(
                       normalText: "Esqueci minha senha",
                       isUnderline: true,
-                      page: "/passwordReset",
+                      page: "/passwordRecovery",
                     ),
                     CustomTextButton(
                       normalText: "Esqueci meu E-mail",

@@ -54,7 +54,7 @@ class PasswordReset extends StatelessWidget {
                 width: 500,
                 height: 50,
                 child: CustomElevatedButton(
-                    label: "Confirmar", page: "/PasswordSucess"),
+                    label: "Confirmar", page: "/resetSucess"),
               )
             ]),
       ),

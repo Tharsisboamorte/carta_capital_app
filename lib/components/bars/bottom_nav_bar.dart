@@ -17,6 +17,7 @@ class CustomBottomNavBar extends StatefulWidget {
 class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
   int indexCurrent =0;
 
+
   final Map<String, Widget> _screenOptions = {
     "/home" : HomePage(),
     "/magazines" : MagazinePage(),

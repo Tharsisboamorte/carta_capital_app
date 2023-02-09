@@ -314,4 +314,27 @@ Este texto aparece na edição impressa de""",
     );
   }
 
+  ElevatedButton blackElevatedButton(BuildContext context, String page, String label, bool isBold){
+    return ElevatedButton(
+      onPressed: () {
+        Navigator.of(context).pushReplacementNamed(page);
+      },
+      style: ButtonStyle(
+          backgroundColor: const MaterialStatePropertyAll<Color>(
+              Colors.black),
+          shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5.0),
+            side: const BorderSide(
+                color: Colors.black, width: 2),
+          )
+          )
+      ),
+      child: Text(label,
+          style: TextStyle(
+              color: Colors.white,
+              fontWeight: isBold ? FontWeight.bold : FontWeight.normal,
+              fontFamily: DefaultConfig.buttonFont)),
+    );
+  }
+
 }

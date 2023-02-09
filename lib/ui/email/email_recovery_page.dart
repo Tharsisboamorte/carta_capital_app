@@ -22,7 +22,7 @@ class EmailRecovery extends StatelessWidget {
                   icon: const Icon(Icons.arrow_back_ios),
                   color: Colors.red,
                   onPressed: () {
-                    Navigator.of(context).restorablePushReplacementNamed("/");
+                    Navigator.of(context).popAndPushNamed("/navigator");
                   },
                 ),
                 const Text("Voltar")
@@ -51,7 +51,7 @@ class EmailRecovery extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              CustomElevatedButton(page: "/emailConfirme", label: "Validar")
+              CustomElevatedButton(page: "/emailConfirm", label: "Validar")
             ],
           ),
         )

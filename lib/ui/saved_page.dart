@@ -3,6 +3,7 @@ import 'package:carta_capital_app/utils/default.dart';
 import 'package:flutter/material.dart';
 
 import '../components/buttons/custom_button.dart';
+import '../components/cards/recent_view_cards.dart';
 
 class SavedPage extends StatefulWidget {
   const SavedPage({Key? key}) : super(key: key);
@@ -155,6 +156,42 @@ class _SavedPageState extends State<SavedPage> {
                                   fontSize: 20,
                                   fontFamily: DefaultConfig.defaultFont)),
                         ),
+                        SingleChildScrollView(
+                          physics: const NeverScrollableScrollPhysics(),
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                            mainAxisAlignment:
+                            MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: const [
+                              Padding(
+                                padding:
+                                EdgeInsets.only(top: 20.0, right: 10.0, left: 32),
+                                child: SizedBox(
+                                  height: 166,
+                                  width: 290,
+                                  child: RecentViewCard(
+                                    image: 'assets/images/mags/image27.png',
+                                    title: 'Intriga e corrupção',
+                                    edition: '1206',
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(top: 20.0),
+                                child: SizedBox(
+                                  height: 166,
+                                  width: 290,
+                                  child: RecentViewCard(
+                                    image: 'assets/images/mags/image28.png',
+                                    title: 'Intriga e corrupção',
+                                    edition: '1206',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
                       ],
                     ))
               ],

@@ -1,4 +1,5 @@
 import 'package:carta_capital_app/components/bars/bottom_nav_bar.dart';
+import 'package:carta_capital_app/utils/default.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/bars/title_appbar.dart';
@@ -42,10 +43,13 @@ class _PaymentPageState extends State<PaymentPage> {
               ),
 
               // ICONES DO CARTÃO DE CRÉDITO
-              SizedBox(
-                width: 500,
-                height: 50,
-                child: Image.asset("assets/images/cards.png"),
+              Padding(
+                padding: const EdgeInsets.only(left: 50.0, right: 50),
+                child: Container(
+                  width: 20,
+                    height: 50,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: DefaultConfig.darkerWhite),
+                    child: Image.asset("assets/images/cards.png")),
               ),
 
               const SizedBox(
@@ -110,8 +114,12 @@ class _PaymentPageState extends State<PaymentPage> {
               const SizedBox(
                 height: 20,
               ),
-              const CustomElevatedButton(
-                  page: "/PaymentRevision", label: "Confirmar"),
+              const SizedBox(
+                height: 45,
+                width: 320,
+                child: CustomElevatedButton(
+                    page: "/paymentRevision", label: "Confirmar"),
+              ),
             ],
           ),
         ),

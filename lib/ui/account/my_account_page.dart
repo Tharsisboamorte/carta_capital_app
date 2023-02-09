@@ -1,6 +1,7 @@
 import 'package:carta_capital_app/components/bars/title_appbar.dart';
 import 'package:carta_capital_app/components/buttons/custom_button.dart';
 import 'package:carta_capital_app/components/fields/text_field.dart';
+import 'package:carta_capital_app/utils/default.dart';
 import 'package:flutter/material.dart';
 
 import '../../components/bars/bottom_nav_bar.dart';
@@ -23,48 +24,55 @@ class _MyAccountPage extends State<MyAccountPage> {
         child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: const [
-              Text("Minha Conta",
+            children: [
+              const Text("Minha Conta",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-              SizedBox(height: 15),
-              Text("Veja seu perfil"),
-              SizedBox(height: 20),
-              CustomTextField(label: "Nome", hintText: 'Maria da Silva Santos'),
-              SizedBox(height: 20),
-              CustomTextField(
+              const SizedBox(height: 15),
+              const Text("Veja seu perfil"),
+              const SizedBox(height: 20),
+              const CustomTextField(label: "Nome", hintText: 'Maria da Silva Santos'),
+              const SizedBox(height: 20),
+              const CustomTextField(
                   label: "E-mail", hintText: 'mariadasilva@gmail.com'),
-              SizedBox(height: 20),
-              CustomTextField(label: "Gênero", hintText: 'Feminino'),
-              SizedBox(height: 20),
-              CustomTextField(label: "Nascimento", hintText: '06/02/1977'),
-              SizedBox(height: 20),
-              CustomElevatedButton(
-                label: 'Alterar Minha Senha',
-                page: '/PasswordReset',
+              const SizedBox(height: 20),
+              const CustomTextField(label: "Gênero", hintText: 'Feminino'),
+              const SizedBox(height: 20),
+              const CustomTextField(label: "Nascimento", hintText: '06/02/1977'),
+              const SizedBox(height: 20),
+              const SizedBox(
+                height: 45,
+                width: 320,
+                child: CustomElevatedButton(
+                  label: 'Alterar Minha Senha',
+                  page: '/passwordReset',
+                ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text("Seu Plano", style: TextStyle(fontWeight: FontWeight.bold)),
-              SizedBox(height: 20),
-              Text("O seu plano atual é o básico por 1 ano:"),
-              SizedBox(height: 5),
-              Text("* Acesso limitado ao conteúdo digital"),
-              SizedBox(height: 5),
-              Text("* Acesso as newsletters exclusivas para assinates"),
-              SizedBox(height: 5),
-              Text("* O seu plano vence dia 25/08/2022"),
-              SizedBox(height: 5),
-              Text("* Forma de pagamento: Cartão de crédito"),
-              SizedBox(height: 10),
-              CustomElevatedButton(label: 'Alterar Meu Plano ', page: ''),
-              SizedBox(
+              const Text("Seu Plano", style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 20),
+              const Text("O seu plano atual é o básico por 1 ano:"),
+              const SizedBox(height: 5),
+              const Text("* Acesso limitado ao conteúdo digital"),
+              const SizedBox(height: 5),
+              const Text("* Acesso as newsletters exclusivas para assinates"),
+              const SizedBox(height: 5),
+              const Text("* O seu plano vence dia 25/08/2022"),
+              const SizedBox(height: 5),
+              const Text("* Forma de pagamento: Cartão de crédito"),
+              const SizedBox(height: 10),
+              const SizedBox(
+                  height: 45,
+                  width: 320,
+                  child: CustomElevatedButton(label: 'Alterar Meu Plano ', page: '/signUp')),
+              const SizedBox(
                 height: 10,
               ),
-              CustomElevatedButton(
-                label: 'Alterar Forma de pagamento',
-                page: "/paymentPage",
-              )
+              SizedBox(
+                  height: 45,
+                  width: 320,
+                  child: DefaultConfig().blackElevatedButton(context, "/payment", "Alterar Forma de pagamento", true)),
             ]),
       ),
     );
