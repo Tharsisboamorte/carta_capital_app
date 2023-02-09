@@ -83,6 +83,10 @@ flutter:
     - assets/images/mags/image34.png
     - assets/images/plusbutton.png
     - assets/images/bookmarkIcon.png
+    - assets/images/quotes.png
+    - assets/images/minoAvatar.png
+    - assets/images/linkIcon.png
+    - assets/images/tiradentes.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

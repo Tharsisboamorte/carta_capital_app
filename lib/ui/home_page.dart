@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 20),
                     Center(
                         child:
-                            DefaultConfig().sharpElevatedButton("LEIA AGORA", "/completeMagazines", context)),
+                            DefaultConfig().sharpElevatedButton("LEIA AGORA", "/completeMagazines", context, DefaultConfig.defaultThemeColor)),
                     const SizedBox(height: 35),
                     Text(
                       "OUTRAS EDIÇÕES",
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(height: 30),
-              DefaultConfig().sharpElevatedButton("VER TODAS", "/", context),
+              DefaultConfig().sharpElevatedButton("VER TODAS", "/", context, DefaultConfig.defaultThemeColor),
               const SizedBox(height: 25),
               Container(
                   color: DefaultConfig.defaultThemeColor,
@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
                                         height: 166,
                                         width: 290,
                                         child: RecentViewCard(
-                                          image: 'assets/images/mags/image27.png',
+                                          image: 'assets/images/mags/image26.png',
                                           title: 'Intriga e corrupção',
                                           edition: '1206',
                                         ),
@@ -201,7 +201,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               const SizedBox(height: 30),
-              DefaultConfig().sharpElevatedButton("VER TODAS", "/", context),
+              DefaultConfig().sharpElevatedButton("VER TODAS", "/", context, DefaultConfig.defaultThemeColor),
               const SizedBox(height: 30),
             ],
           ),
