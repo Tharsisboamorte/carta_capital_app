@@ -28,12 +28,15 @@ class _CreateAccountPageState extends State<CreateAccountPage> {
             Padding(
                 padding: const EdgeInsets.all(15),
                 child: Row(
-                  children: const [
-                    Icon(
-                      Icons.arrow_back_ios,
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.arrow_back_ios),
                       color: Colors.red,
+                      onPressed: () {
+                        Navigator.of(context).popAndPushNamed("/signUp");
+                      },
                     ),
-                    Text("Voltar")
+                    const Text("Voltar")
                   ],
                 )),
             Padding(

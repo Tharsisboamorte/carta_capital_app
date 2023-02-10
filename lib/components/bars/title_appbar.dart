@@ -1,6 +1,5 @@
 import 'package:carta_capital_app/ui/account/menu_account.dart';
 import 'package:carta_capital_app/utils/default.dart';
-import 'package:flash/flash.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
